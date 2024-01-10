@@ -16,7 +16,7 @@ VERBOSE=1
 CFLAGS += $(build_args)
 
 # Path to the NRF52 SDK. Change if needed.
-SDK_ROOT := /home/benjamin/Dokument/nrf52/nRF5_SDK_15.3.0_59ac345
+SDK_ROOT := /home/george/Documents/DeviceDownload/nRF5_SDK_15.3.0_59ac345
 
 TARGET_PATH := $(OUTPUT_DIRECTORY)/$(TARGETS).hex
 
@@ -418,4 +418,4 @@ merge_hex: $(TARGET_PATH)
 	mkdir -p hex
 	srec_cat $(SD_PATH) -intel $(TARGET_PATH) -intel -o hex/merged.hex -intel --line-length=44
 	arm-none-eabi-objcopy -I ihex -O binary hex/merged.hex hex/merged.bin --gap-fill 0xFF
-	
+
