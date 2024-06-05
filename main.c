@@ -228,8 +228,8 @@ static volatile int m_reset_timer = 0;
 
 app_uart_comm_params_t m_uart_comm_params =
 {
-		.rx_pin_no    = UART_RX,
-		.tx_pin_no    = UART_TX,
+		.rx_pin_no    = NRF_GPIO_PIN_MAP(0, 23),
+		.tx_pin_no    = NRF_GPIO_PIN_MAP(0, 22),
 		.rts_pin_no   = 0,
 		.cts_pin_no   = 0,
 		.flow_control = APP_UART_FLOW_CONTROL_DISABLED,
