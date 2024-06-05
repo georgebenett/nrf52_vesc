@@ -85,7 +85,7 @@
 
 #ifdef NRF52840_XXAA
 #if MODULE_BUILTIN
-#define DEVICE_NAME                     "VESC 52840 BUILTIN"
+#define DEVICE_NAME                     "VESC UART PORT"
 #elif MODULE_RD2
 #define DEVICE_NAME                     "VESC RAD2"
 #elif MODULE_STORMCORE
